@@ -1,0 +1,35 @@
+{
+    "name": "PL-Platform API devcontainer",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.12",
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+      "ghcr.io/akhildevelops/devcontainer-features/pip:0": {},
+      "ghcr.io/devcontainers/features/git:1": {},
+      "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {},
+      "ghcr.io/va-h/devcontainers-features/uv:1": {}
+    },
+    "forwardPorts": [8000, 8080],
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "vscodevim.vim",
+          "Catppuccin.catppuccin-vsc",
+          "PKief.material-icon-theme",
+          "charliermarsh.ruff",
+          "ms-python.python",
+          "ms-python.debugpy",
+          "ms-azuretools.vscode-docker",
+          "ms-python.autopep8",
+          "mikestead.dotenv",
+          "aaron-bond.better-comments",
+          "njpwerner.autodocstring",
+          "ms-vscode.makefile-tools",
+          "tomoki1207.pdf",
+          "openai.openai-chatgpt-adhoc",
+          "tamasfe.even-better-toml",
+          "GitHub.vscode-github-actions"
+        ]
+      }
+    }
+  }
+  
