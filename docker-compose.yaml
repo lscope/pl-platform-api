@@ -1,5 +1,5 @@
 services:
-  db:
+  postgres:
     image: postgres
     env_file:
       - ./env/.env
@@ -7,3 +7,11 @@ services:
       - ./db/data:/var/lib/postgresql/data
     ports:
       - 5433:5432
+
+  mongo:
+    image: mongo
+    restart: always
+    env_file:
+      - ./env/.env
+    ports:
+      - 27017:27017
