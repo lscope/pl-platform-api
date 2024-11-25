@@ -5,17 +5,16 @@ from pydantic_settings import BaseSettings
 
 
 class Db(BaseSettings):
-    db_username: str
-    db_password: str
-    db_host: str
-    db_name: str
-    db_port: Annotated[int, Gt(gt=0)]
-
+    postgres_user: str
+    postgres_password: str
+    postgres_host: str
+    postgres_db: str
+    postgres_port: Annotated[int, Gt(gt=0)]
 
 db: Db = Db()
 
-DB_USERNAME: str = db.db_username
-DB_PASSWORD: str = db.db_password
-DB_HOST: str = db.db_host
-DB_NAME: str = db.db_name
-DB_PORT: int = db.db_port
+DB_USERNAME: str = db.postgres_user
+DB_PASSWORD: str = db.postgres_password
+DB_HOST: str = db.postgres_host
+DB_NAME: str = db.postgres_db
+DB_PORT: int = db.postgres_port

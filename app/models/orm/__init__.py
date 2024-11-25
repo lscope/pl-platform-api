@@ -1,0 +1,1 @@
+USERS_TABLENAME: str = "users"
